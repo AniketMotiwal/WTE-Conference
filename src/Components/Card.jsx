@@ -60,7 +60,7 @@ function MemberCard({ member }) {
             <div className="p-4 text-center">
                 <h3 className="font-bold text-base text-gray-800">{member.name}</h3>
                 <p className="font-semibold text-sm text-gray-600  hover:text-xl">{member.title}</p>
-                <p className="font-bold text-sm text-gray-500 mt-1 hover:text-xl">{member.description}</p> {/* Make description bold */}
+                <p className="font-bold text-sm text-gray-500 mt-2">{member.description}</p> {/* Make description bold */}
             </div>
         </div>
     );
