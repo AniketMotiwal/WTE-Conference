@@ -27,12 +27,12 @@ const Content = () => {
       <div className="flex-1 pl-4 animate-fade-in">
         <h3 className="text-xl font-semibold text-primary mt-6">Symposium Themes:</h3>
         <ul className="list-disc list-inside text-muted-foreground mt-2 space-y-1">
-          <li className="transition duration-300 transform hover:scale-105 hover:text-primary text-justify hover:text-3xl">Sustainable Practices: Advocating for a Greener Future</li>
-          <li className="transition duration-300 transform hover:scale-105 hover:text-primary text-justify hover:text-3xl">Circular Economy: Resource Efficiency for Sustainable Growth</li>
-          <li className="transition duration-300 transform hover:scale-105 hover:text-primary text-justify hover:text-3xl">Innovative Technologies: Showcasing Science in Renewable Energy</li>
-          <li className="transition duration-300 transform hover:scale-105 hover:text-primary text-justify hover:text-3xl">Knowledge Exchange: Fostering Interdisciplinary Collaboration</li>
-          <li className="transition duration-300 transform hover:scale-105 hover:text-primary text-justify hover:text-3xl">Policy Recommendations: Shaping the Future of Energy Integration</li>
-          <li className="transition duration-300 transform hover:scale-105 hover:text-primary text-justify hover:text-3xl">Efficiency Collaboration: Strengthening Partnerships for Sustainable Tech</li>
+          <li className="transition duration-300 transform hover:scale-105 hover:text-primary text-justify hover:text-xl">Sustainable Practices: Advocating for a Greener Future</li>
+          <li className="transition duration-300 transform hover:scale-105 hover:text-primary text-justify hover:text-xl">Circular Economy: Resource Efficiency for Sustainable Growth</li>
+          <li className="transition duration-300 transform hover:scale-105 hover:text-primary text-justify hover:text-xl">Innovative Technologies: Showcasing Science in Renewable Energy</li>
+          <li className="transition duration-300 transform hover:scale-105 hover:text-primary text-justify hover:text-xl">Knowledge Exchange: Fostering Interdisciplinary Collaboration</li>
+          <li className="transition duration-300 transform hover:scale-105 hover:text-primary text-justify hover:text-xl">Policy Recommendations: Shaping the Future of Energy Integration</li>
+          <li className="transition duration-300 transform hover:scale-105 hover:text-primary text-justify hover:text-xl">Efficiency Collaboration: Strengthening Partnerships for Sustainable Tech</li>
         </ul>
 
         <p className="text-muted-foreground mt-4 font-bold text-primary transition duration-300 transform hover:scale-105 hover:text-secondary hover:text-3xl">

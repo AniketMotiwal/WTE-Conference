@@ -10,7 +10,7 @@ const Schedule = () => {
 
   return (
     <div style={style}>
-      <h2>This page is updated soon.....</h2>
+      <h2>This page is updated soon..... aniket</h2>
     </div>
   );
 };
