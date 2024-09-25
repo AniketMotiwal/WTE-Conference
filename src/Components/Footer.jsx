@@ -15,13 +15,13 @@ const Footer = () => {
         <div className="flex-1 text-center">
           <h3 className="font-bold">For Registration and for more Information Visit:</h3>
           <p className="text-muted-foreground">
-            <a href="https://www.iitr.ac.in/wteconference" className="text-primary underline">
+            <a href="#" className="text-primary underline">
               https://www.iitr.ac.in/wetconference
             </a>
           </p>
         </div>
         <div className="flex-1 text-center">
-          <h3 className="font-bold">Dr. Vishwajeet, Co-Convenor</h3>
+          <h3 className="font-bold">Dr. Vishwajeet, Co-Convenor 's</h3>
           <p className="text-muted-foreground">9045065328</p>
           <p className="text-muted-foreground">vishwajeet.rj@esit.iitr.ac.in</p>
         </div>
