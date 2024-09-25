@@ -26,4 +26,11 @@
   .animate-fade-in {
     animation: fade-in 1s forwards; /* Adjust duration as needed */
   }
-  
+  /* Custom media query for small screen sizes */
+@media (max-width: 320px) {
+  .no-extra-space {
+    margin-right: 0; /* Ensures no extra margin on the right */
+    padding-right: 0; /* Ensures no extra padding on the right */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+  }
+}

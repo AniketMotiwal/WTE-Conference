@@ -20,7 +20,7 @@ const Header = () => {
   const logoSize = isMobile ? 'h-20 w-20' : 'h-34 w-34'; // Set sizes based on screen type
 
   return (
-    <div className="w-full flex flex-col md:flex-row items-center justify-between p-4 bg-white">
+    <div className="w-full max-w-full box-border overflow-hidden flex flex-col md:flex-row items-center justify-between p-4 bg-white no-extra-space">
       {/* IIT Roorkee Logo */}
       <img src={iit} alt="IIT Roorkee Logo" className={`${logoSize} object-contain`} />
 
