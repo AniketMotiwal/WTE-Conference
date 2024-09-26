@@ -34,3 +34,8 @@
     overflow-x: hidden; /* Prevents horizontal scrolling */
   }
 }
+
+.mx-custom-auto {
+  margin-left: auto;
+  margin-right: 10rem; /* Set right margin to 9rem */
+}
