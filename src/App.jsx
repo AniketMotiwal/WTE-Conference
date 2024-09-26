@@ -15,6 +15,7 @@ import HowReach from'../src/Pages/HowReach';
 import Schedule from '../src/Pages/Schedule';
 import Speakers   from '../src/Pages/Speakers';
 import AbstractSubmisson from '../src/Pages/AbstractSubmisson';
+import Errorpage from '../src/Pages/Errorpage'
 const App = () => {
   return (
     <Router>
@@ -42,6 +43,8 @@ const App = () => {
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/speakers" element={<Speakers />} />
           <Route path="/AbstractSubmisssion" element={<AbstractSubmisson/>}/>
+             {/* Catch-all for invalid URLs */}
+             <Route path="*" element={<Errorpage />} />
         </Routes>
 
         <Footer />

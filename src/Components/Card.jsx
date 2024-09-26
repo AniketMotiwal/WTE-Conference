@@ -13,10 +13,10 @@ const teamMembers = [
     { name: "Prof. K.K Pant", title: "Director, IIT Roorkee", description: "Patron and Advisor", imageUrl: image1 },
     { name: "Prof. Dhananjay Singh", title: "Member Secretary, Indian Council of Social Science Research", description: "Esteemed Guest", imageUrl: image2 },
     { name: "Kavita Dassan", title: "Senior Vice President, Suzlon Group", description: "Esteemed Guest", imageUrl: image3 },
-    { name: "Prof. Akshay Dvivedi", title: "Convenor", description: "Department of Mechanical & Industrial Engineering", imageUrl: image4 },
-    { name: "Dr. Vishwajeet", title: "Co-Convenor", description: "Ramanujan Faculty, Department of Mechanical & Industrial Engineering", imageUrl: image5 },
-    { name: "Prof. V.C Srivastava", title: "Department of Chemical Engineering", imageUrl: image6 },
-    { name: "Prof. Komal Tripathi", title: "Department of Chemical Engineering", imageUrl: image7 },
+    { name: "Prof. Akshay Dvivedi", title: "Convenor", description: "Department of Mechanical & Industrial Engineering PhD, Advanced Manufacturing Processes", imageUrl: image4 },
+    { name: "Dr. Vishwajeet,Co-Convenor", description: "Ramanujan Faculty, Department of Mechanical & Industrial Engineering: Thermochemical Conversion of Waste to Energy", imageUrl: image5 },
+    { name: "Prof. V.C Srivastava", title: "Department of Chemical Engineering Environmental Engineering, Energy & Fuels", imageUrl: image6 },
+    { name: "Prof. Komal Tripathi", title: "Department of Chemical Engineering, Chemicals; Biomass to Green Hydrogen/Syngas", imageUrl: image7 },
     { name: "Prof. Nikhil Dhawan", title: "Department of Metallurgical and Materials Engineering", imageUrl: image8 },
     { name: "Prof. Pratham Arora", title: "Department of Hydro and Renewable Energy", imageUrl: image9 },
     { name: "Prof. Nagendra Kumar", title: "Department of Humanities and Social Sciences", imageUrl: image10 },
@@ -55,12 +55,12 @@ function MemberCard({ member }) {
             <img
                 src={member.imageUrl}
                 alt={member.name}
-                className="w-full h-55 object-fit transition-opacity duration-300"
+                className="w-full h-55 object-cover transition-opacity duration-300"
             />
             <div className="p-4 text-center">
-                <h3 className="font-bold text-base text-gray-800">{member.name}</h3>
-                <p className="font-semibold text-sm text-gray-600  hover:text-xl">{member.title}</p>
-                <p className="font-bold text-sm text-gray-500 mt-2">{member.description}</p> {/* Make description bold */}
+                <h3 className="font-bold text-lg text-gray-800">{member.name}</h3> {/* Consistent font size */}
+                <p className="font-bold text-base text-gray-600 mt-2">{member.title}</p> {/* Medium weight for title */}
+                <p className="font-bold text-sm text-gray-600 mt-2">{member.description}</p> {/* Normal weight for description */}
             </div>
         </div>
     );
