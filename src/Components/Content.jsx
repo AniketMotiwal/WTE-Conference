@@ -35,7 +35,7 @@ const Content = () => {
           <li className="transition duration-300 transform hover:scale-105 hover:text-primary text-justify hover:text-xl">Efficiency Collaboration: Strengthening Partnerships for Sustainable Tech</li>
         </ul>
 
-        <p className="text-muted-foreground mt-4 font-bold text-primary transition duration-300 transform hover:scale-105 hover:text-secondary hover:text-3xl">
+        <p className="text-muted-foreground mt-4 font-bold text-primary transition duration-300 transform hover:scale-105 hover:text-secondary hover:text-3xl text-xl">
           This Symposium also will include invited talks by prominent researchers, technical sessions, and group discussions in the above-mentioned areas. All the accepted papers will be published in the Conference proceedings.
         </p>
       </div>
