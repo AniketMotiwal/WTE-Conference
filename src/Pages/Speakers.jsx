@@ -6,7 +6,7 @@ import image3 from '../assets/Prof. Meenesh-Photoroom.png';
 const Speakers = () => {
   return (
     <div className="container mx-auto py-48">
-      <h2 className="text-2xl font-bold text-center mb-6">Speakers</h2>
+      <h2 className="text-5xl font-bold text-center mb-1">Speakers</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="bg-card p-6 rounded-lg shadow-md flex flex-col items-center transition-opacity duration-300 hover:opacity-80">
           <img className="w-full h-64 object-fit rounded-lg" src={image1} alt="Dr. R K Malhotra" />
