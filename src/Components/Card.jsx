@@ -1,5 +1,5 @@
 import image1 from '../assets/DirectorSir.jpeg';
-import image2 from '../assets/Dhananjay.jpg';
+import image2 from '../assets/dhanjay sir.jpg';
 import image3 from '../assets/Kavita-Dassan-Photoroom1.png';
 import image4 from '../assets/akdewedi.jpg';
 import image5 from '../assets/vishwajeet-Photoroom.png';
@@ -10,7 +10,7 @@ import image9 from '../assets/parthamsir.jpg';
 import image10 from '../assets/nagendra sir-Photoroom.png';
 
 const teamMembers = [
-    { name: "Prof. K.K Pant", title: "Director, IIT Roorkee", description: "Patron and Advisor", imageUrl: image1 },
+    { name: "Prof. K.K Pant", title: "Director, IIT Roorkee Phd,Chemical Engineering", description: "Patron and Advisor", imageUrl: image1 },
     { name: "Prof. Dhananjay Singh", title: "Member Secretary, Indian Council of Social Science Research", description: "Esteemed Guest", imageUrl: image2 },
     { name: "Kavita Dassan", title: "Senior Vice President, Suzlon Group", description: "Esteemed Guest", imageUrl: image3 },
     { name: "Prof. Akshay Dvivedi", title: "Convenor", description: "Department of Mechanical & Industrial Engineering PhD, Advanced Manufacturing Processes", imageUrl: image4 },
@@ -48,8 +48,12 @@ export default function TeamSection() {
         </div>
     );
 }
-
 function MemberCard({ member }) {
+    // Ensure description is defined
+    const description = member.description || '';
+
+    const isEsteemedGuest = description.includes("Esteemed Guest");
+
     return (
         <div className="bg-white rounded-lg shadow-lg w-72 min-h-[350px] overflow-hidden transition-transform transform hover:scale-105">
             <img
@@ -58,10 +62,13 @@ function MemberCard({ member }) {
                 className="w-full h-55 object-cover transition-opacity duration-300"
             />
             <div className="p-4 text-center">
-                <h3 className="font-bold text-lg text-gray-800">{member.name}</h3> {/* Consistent font size */}
-                <p className="font-bold text-base text-gray-600 mt-2">{member.title}</p> {/* Medium weight for title */}
-                <p className="font-bold text-sm text-gray-600 mt-2">{member.description}</p> {/* Normal weight for description */}
+                <h3 className="font-bold text-lg text-gray-800">{member.name}</h3>
+                <p className="font-bold text-base text-gray-600 mt-2">{member.title}</p>
+                <p className={`font-bold text-sm mt-2 ${isEsteemedGuest ? 'text-blue-600' : 'text-gray-600'}`}>
+                    {description}
+                </p>
             </div>
         </div>
     );
 }
+
