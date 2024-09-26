@@ -9,7 +9,7 @@ const Navbar = () => {
     <>
       <nav className="bg-gradient-to-r from-green-400 to-teal-500 shadow-lg">
         <div className="container mx-auto flex justify-center items-center py-4">
-          <div className="flex space-x-6">
+          <div className="flex space-x-10">
             {['/', '/About', '/Registration', '/How to Reach', '/Speakers', '/Schedule', '/Contact'].map((path, index) => (
               <a
                 key={index}

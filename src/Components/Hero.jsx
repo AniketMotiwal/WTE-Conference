@@ -32,6 +32,19 @@ const Hero = () => {
     return () => clearInterval(slideInterval);
   }, [images.length]);
 
+  // Preload first image
+  useEffect(() => {
+    const link = document.createElement('link');
+    link.rel = 'preload';
+    link.href = images[0].src;
+    link.as = 'image';
+    document.head.appendChild(link);
+
+    return () => {
+      document.head.removeChild(link);
+    };
+  }, []);
+
   return (
     <section className="relative bg-background dark:bg-zinc-800 h-[500px] sm:h-[600px] md:h-[700px] lg:h-[800px] overflow-hidden">
       {/* Images */}
@@ -45,6 +58,7 @@ const Hero = () => {
           <img
             src={image.src}
             alt={image.alt}
+            loading={index === 0 ? 'eager' : 'lazy'} // Preload the first image, lazy-load the others
             className="w-full h-full object-cover brightness-110" // Adjust brightness
           />
         </div>
