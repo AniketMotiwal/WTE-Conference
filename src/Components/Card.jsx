@@ -6,7 +6,7 @@ import image5 from '../assets/vishwajeet-Photoroom.png';
 import image6 from '../assets/vssrivastava-Photoroom.png';
 import image7 from '../assets/komal-1.jpeg';
 import image8 from '../assets/dhawan sir.png';
-import image9 from '../assets/parora-233x300.jpeg';
+import image9 from '../assets/parthamsir.jpg';
 import image10 from '../assets/nagendra sir-Photoroom.png';
 
 const teamMembers = [
