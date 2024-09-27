@@ -6,7 +6,7 @@ const Content = () => {
       {/* Left Section */}
       <div className="flex-1 pr-0 md:pr-4 rounded-lg p-4">
         <div className="space-y-4">
-          <a href="/AbstractSubmission" className="block">
+          <a href="/AbstractSubmisssion" className="block">
             <button className="w-full bg-blue-800 text-white text-lg md:text-xl px-8 md:px-10 py-2 md:py-3 rounded border-2 border-blue-800 font-bold transition duration-300 hover:animate-fade-in">
               Abstract Submission
             </button>
