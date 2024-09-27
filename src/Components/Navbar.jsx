@@ -32,7 +32,7 @@ const Navbar = () => {
                 <a
                   key={index}
                   href={path}
-                  className="relative text-white font-semibold text-sm sm:text-base md:text-lg lg:text-xl tracking-wider whitespace-nowrap hover:text-white hover:underline transition-all duration-500 ease-in-out transform hover:scale-110 mr-3"
+                  className="relative text-white font-semibold text-sm sm:text-base md:text-lg lg:text-3xl tracking-wider whitespace-nowrap hover:text-white hover:underline transition-all duration-500 ease-in-out transform hover:scale-110 mr-3"
                 >
                   <span className="relative z-10">{path === '/' ? 'Home' : path.slice(1).replace(/([A-Z])/g, ' $1')}</span>
                   <span className="absolute -bottom-1 left-0 w-full h-1 bg-white opacity-0 hover:opacity-100 transition-all duration-500 ease-in-out rounded-full"></span>
