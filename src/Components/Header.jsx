@@ -20,17 +20,17 @@ const Header = () => {
   const logoSize = isMobile ? 'h-20 w-20' : 'h-34 w-34'; // Set sizes based on screen type
 
   return (
-    <div className="w-full max-w-full box-border overflow-hidden flex flex-col md:flex-row items-center justify-between p-4 bg-white no-extra-space">
+    <div className="w-screen box-border overflow-hidden flex flex-col md:flex-row items-center justify-between p-4 sm:p-0 bg-white no-extra-space">
       {/* IIT Roorkee Logo */}
       <img src={iit} alt="IIT Roorkee Logo" className={`${logoSize} object-fit`} />
 
       {/* Centered Text */}
-      <div className="text-center flex-1 my-4 md:my-0 px-2">
+      <div className="flex-1 text-center my-4 md:my-0 px-2">
         <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-blue-600 dark:text-blue-800">
           Indian Institute of Technology Roorkee
         </h1>
         <h2 className="text-3xl md:text-4xl lg:text-6xl font-medium text-blue-600 dark:text-blue-800">
-          & {/* Added animation */}
+          &
         </h2>
         <h2 className="text-xl md:text-2xl lg:text-6xl font-medium text-blue-600 dark:text-blue-800">
           Science and Engineering Research Board India
