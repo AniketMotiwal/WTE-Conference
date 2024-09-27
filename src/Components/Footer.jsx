@@ -16,7 +16,7 @@ const Footer = () => {
           <h3 className="font-bold">For Registration and for more Information Visit:</h3>
           <p className="text-muted-foreground">
             <a href="#" className="text-primary underline">
-              https://www.iitr.ac.in/wetconference
+             
             </a>
           </p>
         </div>

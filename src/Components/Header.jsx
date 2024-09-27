@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <div className="w-screen box-border overflow-hidden flex flex-col md:flex-row items-center justify-between p-4 sm:p-0 bg-white no-extra-space">
       {/* IIT Roorkee Logo */}
-      <img src={iit} alt="IIT Roorkee Logo" className={`${logoSize} object-fit`} />
+      <img src={iit} alt="IIT Roorkee Logo" className={`${logoSize} object-fit ml-3` } />
 
       {/* Centered Text */}
       <div className="flex-1 text-center my-4 md:my-0 px-2">
@@ -38,7 +38,7 @@ const Header = () => {
       </div>
 
       {/* SERB Logo */}
-      <img src={nseb} alt="SERB Logo" className={`${logoSize} object-fit`} />
+      <img src={nseb} alt="SERB Logo" className={`${logoSize} object-contain mr-10`} />
     </div>
   );
 };
