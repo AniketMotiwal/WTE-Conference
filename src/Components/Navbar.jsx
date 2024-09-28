@@ -64,7 +64,7 @@ const Navbar = () => {
       {isHomePage && (
         <div className="bg-blue-800 text-white p-6">
           <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-center leading-snug">
-            International Symposium on Transforming Waste Management: Circular Economy & Energy Sustainability
+            International Symposium on Transforming Waste Management: Circular Economy & Energy Sustainabilitys
           </h1>
         </div>
       )}
